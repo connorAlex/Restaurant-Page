@@ -1,57 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .content{
     display:grid;
-    grid-template-rows: 1fr 25fr 1fr;
+    grid-template-rows: 1fr 15fr 1fr;
     grid-template-columns: 1fr;
+
     width: 100vw;
     height: 100vh;
 }
 .nav{
     display: flex;
     justify-content: center;
+    align-items: center;
+
     border: 1px solid;
     border-color: black;
+
 }
+
 .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+
     border: 1px solid;
     border-color: black;
 }
+
 .pages {
     display: flex;
+    width: 70%;
     justify-content: space-evenly;
+
     border: 1px solid;
     border-color: black;
 }
+
 .food{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     border: 1px solid;
     border-color: black;
-    
-    
+
+    height: 70%;
+    width: 70%;
     gap: 5px;
 }
+
 .card {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+
     margin: 10px;
     gap: 15px;
-    align-items: center;
+    padding: 25px;
+    width: 50%;
+    
     border: 1px solid;
     border-color: black;
-    padding: 25px;
 }
+
 .img {
     border: 1px solid;
     border-color: black;
-    padding: 20px;
 }
+
 .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     border: 1px solid;
     border-color: black;
 }

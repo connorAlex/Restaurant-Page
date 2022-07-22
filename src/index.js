@@ -1,12 +1,7 @@
+import { initialLoad } from './pageLoad';
 import './style.css';
 
-function component() {
-    const element = document.createElement('div');
+const page = document.querySelector('.content');
 
-    element.innerHTML = "hello world";
-    element.classList.add('hello');
-
-    return element;
-  }
-  
-  document.body.appendChild(component());
+// load core page elements
+page.appendChild(initialLoad());
