@@ -1,3 +1,7 @@
+import {aboutLoad} from './about';
+import { foodLoad } from './food';
+import { drinksLoad } from './drinks';
+
 const initialLoad = () => {
 
     // create nav bar
@@ -18,12 +22,15 @@ const initialLoad = () => {
     // create page buttons
     const about = document.createElement('button');
     about.innerHTML = "About";
+    about.onclick = function() {aboutLoad()};
 
     const food = document.createElement('button');
     food.innerHTML = "Food";
+    food.onclick = () => foodLoad();
 
     const drinks = document.createElement('button');
-    drinks.innerHTML = "Food";
+    drinks.innerHTML = "Drinks";
+    drinks.onclick = () => drinksLoad();
 
     pages.appendChild(about);
     pages.appendChild(food);
