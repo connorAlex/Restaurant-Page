@@ -1,6 +1,4 @@
-import {aboutLoad} from './about';
-import { foodLoad } from './food';
-import { drinksLoad } from './drinks';
+
 
 const initialLoad = () => {
 
@@ -19,19 +17,25 @@ const initialLoad = () => {
 
     container.appendChild(pages);
 
+    // create the subject element
+    const subject = document.createElement('div');
+    subject.classList.add('subject');
+    container.appendChild(subject);
+
     // create page buttons
     const about = document.createElement('button');
+    about.classList.add("about");
     about.innerHTML = "About";
-    about.onclick = function() {aboutLoad(pages)};
 
     const food = document.createElement('button');
+    food.classList.add('food');
     food.innerHTML = "Food";
-    food.onclick = () => container.appendChild(foodLoad());
 
     const drinks = document.createElement('button');
+    drinks.classList.add('drinks');
     drinks.innerHTML = "Drinks";
-    drinks.onclick = () => drinksLoad(pages);
-
+    
+    // append buttons to the page element
     pages.appendChild(about);
     pages.appendChild(food);
     pages.appendChild(drinks);
