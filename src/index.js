@@ -14,6 +14,7 @@ for (const [key, value] of Object.entries(elements)){
 }
 
 let subject = document.querySelector('.subject');
+subject.appendChild(foodLoad());
 
 // logic to switch tabs
 let about = document.querySelector('.about');
@@ -21,5 +22,5 @@ let food = document.querySelector('.food');
 let drinks = document.querySelector('.drinks');
 
 about.onclick = function() {aboutLoad()};
-food.onclick = () => subject.appendChild(foodLoad());
+food.onclick = () => subject.replaceChildren(foodLoad());
 drinks.onclick = () => drinksLoad();
