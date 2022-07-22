@@ -40,7 +40,7 @@ body {
     border-color: black;
 }
 
-.food{
+.subject {
     display: flex;
     flex-direction: column;
     justify-content: center;

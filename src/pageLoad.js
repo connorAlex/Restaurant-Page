@@ -22,15 +22,15 @@ const initialLoad = () => {
     // create page buttons
     const about = document.createElement('button');
     about.innerHTML = "About";
-    about.onclick = function() {aboutLoad()};
+    about.onclick = function() {aboutLoad(pages)};
 
     const food = document.createElement('button');
     food.innerHTML = "Food";
-    food.onclick = () => foodLoad();
+    food.onclick = () => container.appendChild(foodLoad());
 
     const drinks = document.createElement('button');
     drinks.innerHTML = "Drinks";
-    drinks.onclick = () => drinksLoad();
+    drinks.onclick = () => drinksLoad(pages);
 
     pages.appendChild(about);
     pages.appendChild(food);
