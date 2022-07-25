@@ -8,7 +8,7 @@ const foodLoad = (parent) => {
     const card = document.createElement('div');
     card.classList.add('card');
 
-    // create the title + description (x5);
+    // create the title + description
     const title = document.createElement('div');
     title.innerHTML = "Title of Food";
 

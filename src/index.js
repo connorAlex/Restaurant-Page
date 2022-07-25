@@ -13,7 +13,10 @@ for (const [key, value] of Object.entries(elements)){
     page.appendChild(value);
 }
 
+//create subject tile
 let subject = document.querySelector('.subject');
+
+// immediately load Food menu
 subject.appendChild(foodLoad());
 
 // logic to switch tabs
@@ -23,4 +26,4 @@ let drinks = document.querySelector('.drinks');
 
 about.onclick = function() {aboutLoad()};
 food.onclick = () => subject.replaceChildren(foodLoad());
-drinks.onclick = () => drinksLoad();
+drinks.onclick = () => subject.replaceChildren(drinksLoad());
