@@ -13,7 +13,7 @@ for (const [key, value] of Object.entries(elements)){
     page.appendChild(value);
 }
 
-//create subject tile
+// select subject tile
 let subject = document.querySelector('.subject');
 
 // immediately load Food menu
@@ -24,6 +24,6 @@ let about = document.querySelector('.about');
 let menu = document.querySelector('.menu');
 let contact = document.querySelector('.contact');
 
-about.onclick = function() {aboutLoad()};
+about.onclick = () => subject.replaceChildren(aboutLoad());
 menu.onclick = () => subject.replaceChildren(menuLoad());
 contact.onclick = () => subject.replaceChildren(contactLoad());
