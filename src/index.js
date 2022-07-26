@@ -17,7 +17,7 @@ for (const [key, value] of Object.entries(elements)){
 let subject = document.querySelector('.subject');
 
 // immediately load Food menu
-subject.appendChild(menuLoad());
+subject.appendChild(aboutLoad());
 
 // logic to switch tabs
 let about = document.querySelector('.about');
