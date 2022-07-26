@@ -1,7 +1,7 @@
 import { initialLoad } from './pageLoad';
 import {aboutLoad} from './about';
-import { foodLoad } from './food';
-import { drinksLoad } from './drinks';
+import { menuLoad } from './menu';
+import { contactLoad } from './contact';
 import './style.css';
 
 const page = document.querySelector('.content');
@@ -17,13 +17,13 @@ for (const [key, value] of Object.entries(elements)){
 let subject = document.querySelector('.subject');
 
 // immediately load Food menu
-subject.appendChild(foodLoad());
+subject.appendChild(menuLoad());
 
 // logic to switch tabs
 let about = document.querySelector('.about');
-let food = document.querySelector('.food');
-let drinks = document.querySelector('.drinks');
+let menu = document.querySelector('.menu');
+let contact = document.querySelector('.contact');
 
 about.onclick = function() {aboutLoad()};
-food.onclick = () => subject.replaceChildren(foodLoad());
-drinks.onclick = () => subject.replaceChildren(drinksLoad());
+menu.onclick = () => subject.replaceChildren(menuLoad());
+contact.onclick = () => subject.replaceChildren(contactLoad());

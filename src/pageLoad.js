@@ -27,18 +27,18 @@ const initialLoad = () => {
     about.classList.add("about");
     about.innerHTML = "About";
 
-    const food = document.createElement('button');
-    food.classList.add('food');
-    food.innerHTML = "Food";
+    const menu = document.createElement('button');
+    menu.classList.add('menu');
+    menu.innerHTML = "Menu";
 
-    const drinks = document.createElement('button');
-    drinks.classList.add('drinks');
-    drinks.innerHTML = "Drinks";
+    const contact = document.createElement('button');
+    contact.classList.add('contact');
+    contact.innerHTML = "Contact";
     
     // append buttons to the page element
     pages.appendChild(about);
-    pages.appendChild(food);
-    pages.appendChild(drinks);
+    pages.appendChild(menu);
+    pages.appendChild(contact);
 
     // create footer
     const footer = document.createElement('footer');

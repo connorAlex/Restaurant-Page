@@ -1,5 +1,5 @@
-const drinksLoad = () => {
-    
+const menuLoad = (parent) => {
+
     // create the subject element
     const subject = document.createElement('div');
     subject.classList.add('subject');
@@ -10,10 +10,10 @@ const drinksLoad = () => {
 
     // create the title + description
     const title = document.createElement('div');
-    title.innerHTML = "Title of Drink";
+    title.innerHTML = "Title of Food";
 
     const desc = document.createElement('div');
-    desc.innerHTML = "This is a description of drink";
+    desc.innerHTML = "This is a description of food";
 
     card.appendChild(title);
     card.appendChild(desc);
@@ -22,5 +22,4 @@ const drinksLoad = () => {
 
     return subject;
 }
-
-export {drinksLoad};
+export {menuLoad};
