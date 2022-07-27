@@ -41,7 +41,7 @@ const initialLoad = () => {
 
     // create footer
     const footer = document.createElement('footer');
-    footer.innerHTML = "Footer";
+    footer.innerHTML = "<p>created by <a href = 'https://github.com/connorAlex'> connor cochrane</a>";
 
     return {nav , container, footer};
 }

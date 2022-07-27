@@ -1,19 +1,22 @@
 const menuLoad = () => {
 
+    // add menu content
     const menu = {
         apps: [
-            ['Brandade de Morue', 'BDM Description'],
-            ['French Onion Soup', 'Soup Description']
+            
+            ['brandade de morue', 'salt cod with olive oil, cream & garlic'],
+            ['escargots', 'snails in garlic, parsley & butter']
         ],
 
         entrees: [
-            ['Coq au Vin', 'CAV description'],
-            ['Entree 2', 'Entree2 Description']
+            ['coq au vin', 'chicken in red wine, lardons & mushrooms'],
+            ['tout le lapin', 'all of the rabbit'],
+            ['canard montmorency', 'duckling with cherries, grilled foie gras and chanterelles']
         ],
 
         desserts: [
-            ['Charlotte de Marons', 'CDM Placeholder'],
-            ['Creme Brulee', 'Creme Brulee Placeholder']
+            ['tarte au citron', 'lemon sabayon, pistachio meringue, pistachio shortbread crust'],
+            ['creme brulee', 'chilled vanilla custard with caramelized sugar top']
         ]
     };
 
@@ -22,30 +25,43 @@ const menuLoad = () => {
     item.classList.add('item');
 
 
-    function createCard(course) {
+    function createCard(course, title) {
+
+        const courseDiv = document.createElement('div');
+        courseDiv.classList.add('course');
+
+
+        const courseTitle = document.createElement('div');
+        courseTitle.classList.add('courseTitle');
+        courseTitle.innerHTML = title;
+
+        courseDiv.appendChild(courseTitle)
         course.forEach((e) => {
-            //create a card
+
+            // create a card
             const card = document.createElement('div');
             card.classList.add('card');
 
-            //create a title div
+            // create a title div
             const title = document.createElement('div');
             title.innerHTML = e[0];
 
-            //create the description div
+            // create the description div
             const desc = document.createElement('div');
             desc.innerHTML = e[1];
 
+            // append all items to the proper parent
             card.appendChild(title);
             card.appendChild(desc);
             
-            item.appendChild(card);
+            courseDiv.appendChild(card);
         });
+        item.appendChild(courseDiv);
     };
 
-    createCard(menu.apps);
-    createCard(menu.entrees);
-    createCard(menu.desserts);
+    createCard(menu.apps, 'appetizers');
+    createCard(menu.entrees, 'entrees');
+    createCard(menu.desserts, 'desserts');
 
     return item;
 }
