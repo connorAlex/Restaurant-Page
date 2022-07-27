@@ -6,7 +6,7 @@ const contactLoad = () => {
 
     // title
     const subtitle = document.createElement('div');
-    subtitle.classList.add('contact');
+    subtitle.classList.add('subtitle');
     subtitle.innerHTML = "Contact Information"
     
     // small container div
