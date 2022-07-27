@@ -1,5 +1,4 @@
 
-
 const initialLoad = () => {
 
     // create nav bar

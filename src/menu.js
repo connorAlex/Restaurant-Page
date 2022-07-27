@@ -1,8 +1,9 @@
-const menuLoad = (parent) => {
+const menuLoad = () => {
 
-    // create the subject element
-    const subject = document.createElement('div');
-    subject.classList.add('subject');
+    // create the new subject element
+    const item = document.createElement('div');
+    item.classList.add('item');
+
 
     // create card
     const card = document.createElement('div');
@@ -18,8 +19,8 @@ const menuLoad = (parent) => {
     card.appendChild(title);
     card.appendChild(desc);
 
-    subject.appendChild(card);
+    item.appendChild(card);
 
-    return subject;
+    return item;
 }
 export {menuLoad};

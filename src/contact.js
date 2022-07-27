@@ -1,8 +1,8 @@
 const contactLoad = () => {
 
-    // create the subject element
-    const subject = document.createElement('div');
-    subject.classList.add('subject');
+    // create the new item element
+    const item = document.createElement('div');
+    item.classList.add('item');
 
     // title
     const subtitle = document.createElement('div');
@@ -27,14 +27,14 @@ const contactLoad = () => {
     email.innerHTML = "lapasserelle@gmail.com";
 
     // append info
-    subject.appendChild(subtitle);
+    item.appendChild(subtitle);
     contactContainer.appendChild(phone);
     contactContainer.appendChild(address);
     contactContainer.appendChild(email);
-    subject.appendChild(contactContainer);
+    item.appendChild(contactContainer);
     
 
-    return subject;
+    return item;
 }
 
 export {contactLoad};
