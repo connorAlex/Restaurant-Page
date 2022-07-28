@@ -1,4 +1,14 @@
+@font-face {
+    font-family: 'oswald';
+    src: url('./fraunces-v23-latin-regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+
 body {
+    font-family: 'oswald';
+    
     margin: 0;
     padding: 0;
 }
@@ -20,7 +30,7 @@ button:hover{
 
 .content{
     display:grid;
-    grid-template-rows: 1fr 15fr 1fr;
+    grid-template-rows: 1fr 20fr 1fr;
     grid-template-columns: 1fr;
 
     width: 100vw;
@@ -30,7 +40,7 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    font-size: 25px;
 
     border: 1px solid;
     border-color: black;
@@ -48,8 +58,9 @@ button:hover{
 
 .pages {
     display: flex;
-    width: 80%;
+    min-width: 80%;
     justify-content: space-evenly;
+    margin: 8px;
 }
 
 .subject {
@@ -70,7 +81,9 @@ button:hover{
 
     gap: 40px;
     width: 80%;
-    height: 90%;
+    height: 100%;
+    padding: 10px;
+    padding-bottom: 15px;
 
     border: 1px solid;
     border-color: black;
@@ -92,7 +105,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     gap: 3px;
-    width: 90%;
+    min-width: 90%;
 }
 .card div:first-child {
     font-weight: bold;
