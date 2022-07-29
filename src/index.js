@@ -5,7 +5,7 @@ import { contactLoad } from './contact';
 import './style.css';
 
 const page = document.querySelector('.content');
-const container = document.querySelector('.container');
+
 
 // load core page elements
 let elements = initialLoad();

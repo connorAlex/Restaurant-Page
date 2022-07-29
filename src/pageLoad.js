@@ -14,7 +14,7 @@ const initialLoad = () => {
     const pages = document.createElement('div');
     pages.classList.add('pages');
 
-    container.appendChild(pages);
+    nav.appendChild(pages);
 
     // create the subject element
     const subject = document.createElement('div');

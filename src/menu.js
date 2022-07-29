@@ -5,17 +5,18 @@ const menuLoad = () => {
         apps: [
             
             ['brandade de morue', 'salt cod with olive oil, cream & garlic'],
-            ['escargots', 'snails in garlic, parsley & butter']
+            ['escargots', 'snails in garlic, parsley & butter'],
+            ['Poireaux vinaigrette', 'leeks, hazelnuts']
         ],
 
         entrees: [
             ['coq au vin', 'chicken in red wine, lardons & mushrooms'],
             ['tout le lapin', 'all of the rabbit'],
-            ['canard montmorency', 'duckling with cherries, grilled foie gras and chanterelles']
+            ['canard montmorency', 'duckling with cherries, foie gras, chanterelles']
         ],
 
         desserts: [
-            ['tarte au citron', 'lemon sabayon, pistachio meringue, pistachio shortbread crust'],
+            ['tarte au citron', 'lemon sabayon, pistachio meringue, shortbread crust'],
             ['creme brulee', 'chilled vanilla custard with caramelized sugar top']
         ]
     };
