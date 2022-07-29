@@ -15,19 +15,19 @@ body {
     background-image: url(./building.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    background-position: 42%;
+    background-position: 62%;
     
 }
 
 button{
     background-color: inherit;
-    border: 1px solid;
+    border: 0px solid;
     padding: 10px;
     padding-inline: 50px;
     transition: .4s;
     cursor: pointer;
     background-color: whitesmoke;
-    border-radius: 3px;
+    border-radius: 8px;
 }
 
 button:hover{
@@ -54,8 +54,8 @@ button:hover{
     font-size: 25px;
     padding-left: 25px;
 
-    background-color: rgba(255, 255, 255, .35);
-    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(7px);
 }
 
 .container{
@@ -80,8 +80,7 @@ button:hover{
     align-items: center;
     
     width: 82%;
-    height: 80%;
-    
+    height: 70vh;
     
     margin-bottom: 15px;
 }
@@ -96,14 +95,10 @@ button:hover{
     height: inherit;
     padding: 10px;
     padding-bottom: 15px;
-    background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, .25);
+    backdrop-filter: blur(10px);
     
-
-    backdrop-filter: blur(5px);
-    border: 1px solid;
-    border-color: black;
-    border-radius: 6px;
+    border-radius: 10px;
 }
 .card {
     display: flex;
@@ -114,10 +109,8 @@ button:hover{
     padding: 15px;
     width: inherit;
     min-width: 60vw;
-
-    border: 1px solid;
-    border-color: black;
-    border-radius: 3px;
+    opacity: .85;
+    border-radius: 8px;
     background-color: whitesmoke;
     
 }
@@ -154,7 +147,20 @@ footer{
 }
 .subtitle {
     font-weight: bold;
+    text-align: center;
 }
 .desc{
     width: 50%;
+}
+.infoCard{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 90%;
+    height: 90%;
+
+    opacity: .8;
+    background-color: whitesmoke;
+    border-radius: 8px;
 }

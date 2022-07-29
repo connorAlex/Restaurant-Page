@@ -4,6 +4,10 @@ const contactLoad = () => {
     const item = document.createElement('div');
     item.classList.add('item');
 
+    // create a card for contact info
+    const card = document.createElement('div');
+    card.classList.add('infoCard');
+    
     // title
     const subtitle = document.createElement('div');
     subtitle.classList.add('subtitle');
@@ -27,11 +31,13 @@ const contactLoad = () => {
     email.innerHTML = "lapasserelle@gmail.com";
 
     // append info
-    item.appendChild(subtitle);
+    card.appendChild(subtitle);
     contactContainer.appendChild(phone);
     contactContainer.appendChild(address);
     contactContainer.appendChild(email);
-    item.appendChild(contactContainer);
+    card.appendChild(contactContainer)
+    
+    item.appendChild(card);
     
 
     return item;
